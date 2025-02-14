@@ -2,19 +2,67 @@
 <html lang="en">
   <head>
     <title>Document</title>
+    <style>
+      * {
+        margin: 25px 0px;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-size: 35px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      article {
+        margin: auto;
+        padding: 30px;
+        border: 1px solid rgb(0, 0, 0, 1);
+        width: 500px;
+      }
+
+      article > h1 {
+        font-weight: 400;
+      }
+
+      article h1 + hr {
+        width: 50px;
+        border: 2px solid #000;
+      }
+
+      article hr + p {
+        font-size: 0.6em;
+        line-height: 30px;
+      }
+
+      article #button {
+        color: #fff;
+        width: 100%;
+        height: 50px;
+
+        border-radius: 30px;
+        font-size: 30px;
+        background-color: #4184e1;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      #button + p {
+        font-size: 0.4em;
+        line-height: 20px;
+      }
+    </style>
   </head>
   <body>
     <article>
-      <h1>Build your first chatbot in 10 minutes</h1>
-      <span></span>
+      <h1>Build your first chatbot in 10 minutes!</h1>
+      <hr />
       <p>
         Have a bot answering questions from customers on your website within 10
         minutes of signing up for ChatBot.
       </p>
-      <div>try now -></div>
+      <div id="button">try now &rarr;</div>
       <p>
         By clicking try now you create an account and agree to our Terms and
-        Conditions and Privacy Policy
+        Conditions and Privacy Policy.
       </p>
     </article>
   </body>

@@ -4,50 +4,52 @@
     <title>Document</title>
     <style>
       * {
-        margin: 30px 0px;
-        font-family: sans-serif;
-        letter-spacing: 1px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
         word-spacing: 2px;
-        font-size: 35px;
-        color: rgba(0, 0, 0, 0.5);
+        letter-spacing: 0.6px;
       }
 
       article {
-        margin: auto;
-        padding: 20px 50px;
-        border: 1px solid rgb(0, 0, 0, 0.7);
-        width: 25%;
+        margin: 100px auto;
+        padding: 50px;
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        width: 30%;
+        font-size: 20px;
+        font-family: sans-serif;
       }
 
-      article > h1 {
+      article > * {
+        margin-bottom: 30px;
+        color: rgb(0, 0, 0, 0.48);
+      }
+
+      h1 {
+        color: rgb(0, 0, 0, 0.68);
         font-weight: 400;
       }
 
-      article h1 + hr {
-        width: 50px;
-        border: 2px solid #000;
+      hr {
+        border: 1.5px solid #000;
+        width: 18%;
       }
 
-      article hr + p {
-        font-size: 0.6em;
-        line-height: 30px;
-      }
-
-      article #button {
-        color: #fff;
-        width: 100%;
-        height: 40px;
-        text-transform: uppercase;
+      a {
+        display: block;
         text-align: center;
-        border-radius: 30px;
-        font-size: 25px;
         background-color: #4184e1;
-        padding-top: 13px;
+        height: 48px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 30px;
+        padding: 10px;
+        color: #fff;
       }
 
-      #button + p {
-        font-size: 0.4em;
-        line-height: 20px;
+      a + p {
+        margin-bottom: 0px;
+        font-size: 14px;
       }
     </style>
   </head>
@@ -59,7 +61,7 @@
         Have a bot answering questions from customers on your website within 10
         minutes of signing up for ChatBot.
       </p>
-      <div id="button">try now &rarr;</div>
+      <a href="#">try now &rarr;</a>
       <p>
         By clicking try now you create an account and agree to our Terms and
         Conditions and Privacy Policy.
